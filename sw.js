@@ -1,4 +1,4 @@
-const CACHE_NAME = 'my-site-cache-v1';
+const CACHE_NAME = 'my-site-cache-v4';
 const resources = [
   '/',
   '/restaurant.html',
@@ -44,7 +44,7 @@ self.addEventListener('fetch', event => {
 })
 
 self.addEventListener('activate', event => {
-  var cacheWhitelist = ['my-site-cache-v1'];
+  var cacheWhitelist = [CACHE_NAME];
 
   event.waitUntil(
     caches.keys().then(cacheNames => Promise.all(
