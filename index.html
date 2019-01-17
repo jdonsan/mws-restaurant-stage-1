@@ -25,13 +25,13 @@
   </header>
 
   <main id="maincontent" role="main">
-    <section id="map-container">
-      <div id="map" tabindex="-1"></div>
+    <section id="map-container"  aria-label="Restaurant locations in map">
+      <div id="map" role="application"></div>
     </section>
 
     <section>
       <div class="filter-options">
-        <h2>Filter Results</h2>
+        <span>Filter Results</span>
 
         <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" aria-label="Select Neighborhoods">
           <option value="all">All Neighborhoods</option>
@@ -42,7 +42,7 @@
         </select>
       </div>
 
-      <ul id="restaurants-list" class="restaurants-list"></ul>
+      <ul id="restaurants-list" class="restaurants-list" aria-label="Restaurant list"></ul>
     </section>
   </main>
 

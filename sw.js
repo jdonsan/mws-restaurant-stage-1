@@ -1,4 +1,4 @@
-const CACHE_NAME = 'my-site-cache-v4';
+const CACHE_NAME = 'my-site-cache-v2';
 const resources = [
   '/',
   '/restaurant.html',
